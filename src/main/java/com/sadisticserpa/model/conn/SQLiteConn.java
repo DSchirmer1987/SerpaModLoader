@@ -70,7 +70,7 @@ public class SQLiteConn implements Database {
     @Override
     public ArrayList<UserGame> getUserGameList() {
         String sql = """
-                SELECT GameID, GameName, GamePath, IsFav FROM usergames
+                SELECT GameID, GameName, GamePath, IsFav FROM UserGames
                 """;
         ArrayList<UserGame> userGameList = new ArrayList<UserGame>();
         ResultSet rs = this.executeSQLQuery(sql);
